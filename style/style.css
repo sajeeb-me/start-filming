@@ -1,6 +1,10 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
 
+/* scroll behaviour */
+html{
+    scroll-behavior: smooth;
+}
 
 /* cutom property */
 :root{
@@ -13,7 +17,6 @@
 body{
     margin: 0;
 }
-
 .width80{
     width: 80%;
     margin: 100px auto;
@@ -266,7 +269,6 @@ footer{
     align-items: center;
     padding: 30px 0;
 }
-
 footer .logo h4 {
     color: white;
     margin: 5px 0;
