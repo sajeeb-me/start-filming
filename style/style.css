@@ -10,6 +10,9 @@
 }
 
 /* styles */
+body{
+    margin: 0;
+}
 
 .width80{
     width: 80%;
@@ -73,6 +76,7 @@ span{
     font-size: 16px;
     margin: 30px 0;
     line-height: 25px;
+    opacity: 80%;
 }
 .button{
     background-color: var(--secondary-color);
@@ -126,7 +130,7 @@ button:hover{
     font-family: quicksand;
     color: var(--font-color);
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
     margin: 50px 0;
 }
@@ -169,4 +173,114 @@ button:hover{
     font-family: roboto;
     font-size: 14px;
     margin: 2px;
+}
+.see-more{
+    text-align: right;
+}
+.see-more a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: quicksand;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.see-more a:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* recent projects style */
+#projects .heading-two{
+    margin-bottom: 20px;
+}
+.para-middle-align{
+    margin: auto;
+    width: 38%;
+    text-align: center;
+}
+.projects{
+    margin: 50px 0;
+}
+.project-photos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-photos .photo{
+    margin: 10px;
+}
+.project-photos .photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.project-photos .photo.side{
+    width: 40%;
+    opacity: 40%;
+}
+.photo.middle{
+    position: relative;
+}
+.photo.middle .text{
+    position: absolute;
+    top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
+    height: 69%;
+    padding: 100px 40px;;
+    opacity: 0%;
+}
+.photo.middle:hover .text{
+    opacity: 100%;
+    transition: 2s;
+    transition-delay: 0.2s;
+}
+.photo.middle .text h3{
+    font-family: quicksand;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.photo.middle .text p{
+    font-family: roboto;
+    line-height: 30px;
+    opacity: 70%;
+    margin-bottom: 30px;
+}
+.photo.middle .text a{
+    text-decoration: none;
+    color: white;
+    font-family: quicksand;
+}
+.photo.middle .text a:hover{
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+/* footer style */
+footer{
+    background-color: var(--secondary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+footer .logo h4 {
+    color: white;
+    margin: 5px 0;
+}
+footer p{
+    margin: 5px 0;
+    font-family: roboto;
+}
+.social-icon{
+    margin-top: 10px;
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon img{
+    width: 28px;
 }
